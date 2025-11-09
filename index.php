@@ -64,7 +64,7 @@
             
             <button id="breach-button" onclick="checkPassword()" 
                     class="w-full py-3 font-bold text-lg bg-red-700 hover:bg-red-600 rounded-md transition duration-200 uppercase text-white shadow-lg disabled:bg-gray-700 disabled:cursor-not-allowed">
-                BREACH
+                ENTER
             </button>
 
             <p id="error-message" class="mt-4 text-red-500 font-mono text-sm hidden">ACCESS DENIED / SECURITY ALERT</p>
@@ -110,7 +110,7 @@
                 </div>
                 
                 <p class="text-sm text-gray-400 mt-6">
-                    (โปรโตคอล C.T.R.L. กำลังทำงานเบื้องหลัง)
+                    (ตั้งแต่วันี้ถึง 16)
                 </p>
             </div>
         </div>
