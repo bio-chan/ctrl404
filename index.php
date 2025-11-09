@@ -110,7 +110,7 @@
                 </div>
                 
                 <p class="text-sm text-gray-400 mt-6">
-                    (ตั้งแต่วันี้ถึง 16)
+                    (โปรโตคอล C.T.R.L. กำลังทำงานเบื้องหลัง)
                 </p>
             </div>
         </div>
@@ -229,7 +229,7 @@
 
                 setTimeout(() => {
                     breachButton.disabled = false;
-                    breachButton.textContent = 'BREACH';
+                    breachButton.textContent = 'ENTER';
                     loginBox.classList.remove('shake');
                     passwordInput.classList.remove('border-red-500');
                     errorMessage.classList.add('hidden');
