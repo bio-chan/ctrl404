@@ -1,0 +1,266 @@
+/* ================= IMPORT FONTS ================= */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Sarabun:wght@300;400;500&display=swap');
+
+/* ================= GLOBAL ================= */
+body {
+    font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    color: #4a4a4a;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kanit', sans-serif;
+    color: #222;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* ================= HEADER ================= */
+.sut-header {
+    background: #fff;
+    padding: 30px 0;
+}
+
+.sut-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.sut-logo {
+    width: 80px;
+}
+
+.sut-text h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+}
+
+.sut-text h2 {
+    margin: 5px 0 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #999;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.sut-text p {
+    display: none; /* ซ่อนสโลแกนเพื่อความมินิมอล */
+}
+
+/* ================= MENU ================= */
+.sut-menu {
+    background: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sut-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sut-menu a {
+    font-family: 'Kanit', sans-serif;
+    color: #666;
+    padding: 15px 20px;
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.sut-menu a:hover {
+    background-color: transparent;
+    color: #d2b48c;
+}
+
+/* ================= HERO ================= */
+.hero {
+    /* อย่าลืมใส่ไฟล์ภาพ hero.jpg ในโฟลเดอร์ assets/images/ */
+    background: url("images/logo.png") center/cover no-repeat;
+    height: 400px;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.4); 
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.hero-btn {
+    font-family: 'Kanit', sans-serif;
+    padding: 12px 35px;
+    background: #d2b48c;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.2s;
+}
+
+.hero-btn:hover {
+    background: #c1a278;
+}
+
+/* ================= SECTIONS COMMON ================= */
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.news-container, .program-container, .feature-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* ================= CARDS (News & Programs) ================= */
+.news-card, .program-card {
+    background: white;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    text-align: left;
+}
+
+.news-card:hover, .program-card:hover {
+    border-color: #d2b48c;
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    opacity: 0.9;
+    /* อย่าลืมใส่ไฟล์ภาพ news1.jpg, news2.jpg, news3.jpg ใน assets/images/ */
+}
+
+.news-card h3, .program-card h3 {
+    padding: 20px 20px 10px;
+    font-size: 18px;
+    margin: 0;
+    color: #222;
+    line-height: 1.4;
+}
+
+.news-card p, .program-card p {
+    padding: 0 20px 25px;
+    color: #777;
+    font-size: 14px;
+    margin: 0;
+}
+
+.news-card a, .program-card a {
+    display: inline-block;
+    padding: 0 20px 20px;
+    background: transparent;
+    color: #d2b48c;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
+}
+
+.news-card a:hover {
+    color: #c1a278;
+    text-decoration: underline;
+}
+
+/* ================= PROGRAMS SECTION SPECIFIC ================= */
+.program-section {
+    background: #fff;
+}
+.program-card {
+    text-align: left;
+    padding: 0;
+}
+
+/* ================= FEATURES ================= */
+.feature-box {
+    background: transparent;
+    color: #555;
+    padding: 15px 20px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+    border-right: 1px solid #eee;
+}
+
+.feature-box:last-child {
+    border-right: none;
+}
+
+.feature-box:hover {
+    color: #d2b48c;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #f9f9f9;
+    color: #777;
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid #eee;
+}
+
+.footer p {
+    margin: 8px 0;
+}
